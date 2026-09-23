@@ -1,0 +1,3 @@
+db.students.find()
+db.students.updateOne({rollNo:101}, {$set:{course:"CS"}})
+db.students.find()
