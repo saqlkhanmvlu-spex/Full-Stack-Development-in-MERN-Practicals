@@ -1,0 +1,8 @@
+// Delete student with roll number 104
+db.students.deleteOne({rollNo:104})
+// Delete one document
+db.students.deleteOne({rollNo:103})
+// Delete all matching documents
+db.students.deleteMany({course:"IT"})
+// Update Radha's course from IT to CS
+db.students.updateOne({name:"Radha"}, {$set:{course:"CS"}})
